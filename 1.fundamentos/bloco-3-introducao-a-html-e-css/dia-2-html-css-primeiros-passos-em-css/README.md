@@ -1,0 +1,1 @@
+Nesta pasta contêm todos os exercícios feitos no dia 19/08/2021.
