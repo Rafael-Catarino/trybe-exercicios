@@ -1,6 +1,6 @@
 # Trybe
 
-Este repositÃ³rio contem todas as atividades de aprendizagem desenvolvidas por _[Rafael dos Santos Catarino](https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/)_ como estudante da [Trybe](https://www.betrybe.com/) :rocket:
+Este repositório contem todas as atividades de aprendizagem desenvolvidas por _[Rafael dos Santos Catarino](https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/)_ como estudante da [Trybe](https://www.betrybe.com/) :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
