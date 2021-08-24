@@ -1,0 +1,60 @@
+ol {
+    background-color: yellow;
+}
+
+li{
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bolder;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+.title {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+.par {
+    color: green;
+}
+
+.impar {
+    text-transform: uppercase;
+}
+
+.header{
+    color: red;
+}
+
+.ling-prog {
+    color: blue;
+}
+
+.fundo {
+    background-color: pink;
+}
+
+.color-StackOverflow:hover {
+    color: orange;
+}
+
+.color-W3Schools:hover {
+    color: green;
+}
+
+.color-MDNWebDocs:hover {
+    color: black;
+}
+
+.color-DevDocs:hover {
+    color: yellow;
+}
+
+.color-Trybe:hover {
+    color: lightgreen;
+}
