@@ -21,6 +21,7 @@ h2 {
 }
 
 .lado-direito {
+  border-radius: 10px;
   float: right;
   font-family: sans-serif;
   margin-bottom: 20px;
@@ -30,6 +31,7 @@ h2 {
 }
 
 .lado-esquerdo {
+  border-radius: 10px;
   float: left;
   font-family: sans-serif;
   margin-top: 20px;
@@ -37,6 +39,10 @@ h2 {
   margin-left: 30px;
   text-align: justify;
   width: 410px;
+}
+
+.foto {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.541);
 }
 
 .first-text {
@@ -65,9 +71,10 @@ h2 {
 }
 
 .aside-rigth {
-  background-color: white;
+  background-color: rgb(240, 251, 255);
   float: right;
-  
+  margin-right: 38px;
+  margin-top: 2px;
 }
 
 footer {
