@@ -2,7 +2,6 @@
 Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
 Um ângulo será considerado inválido se não tiver um valor positivo.*/
 
-
 const angulo1 = -30;
 const angulo2 = 50;
 const angulo3 = 100;
