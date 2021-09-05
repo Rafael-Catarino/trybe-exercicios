@@ -6,6 +6,7 @@ lastName: 'Santos',
 };
 const patientEmail = 'ana@email.com';
 
+/*1-Experimente executar o comando console.log(typeof patientAge) e veja o que acontece! Ué...mas não declaramos essa variável, não é mesmo?*/
 console.log(typeof patientId);
 console.log(typeof patientAge);
 console.log(typeof isEnrolled);

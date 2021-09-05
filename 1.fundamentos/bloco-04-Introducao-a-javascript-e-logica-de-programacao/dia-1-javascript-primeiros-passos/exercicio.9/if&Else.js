@@ -11,4 +11,3 @@ if (num1 % 2 != 0 && num2 % 2 === 0 && num3 % 2 ===0 || num1 % 2 === 0 && num2 %
 else {
     console.log("False");
 }
-

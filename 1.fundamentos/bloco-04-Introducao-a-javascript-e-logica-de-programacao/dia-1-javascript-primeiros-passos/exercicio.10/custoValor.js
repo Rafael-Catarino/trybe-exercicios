@@ -18,7 +18,3 @@ else{
   let lucro = (valorVenda - valorCustoTotal) * 1000;
   console.log(lucro);
 }
-
-
-
-

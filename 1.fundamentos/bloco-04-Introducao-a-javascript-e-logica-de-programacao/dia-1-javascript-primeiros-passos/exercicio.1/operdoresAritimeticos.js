@@ -15,4 +15,3 @@ const divisao = (a/b);
 const modulo = (a%b);
 
 console.log(soma, subtrcao, multiplicacao, divisao, modulo);
-
