@@ -10,3 +10,7 @@ console.log("-----------");
 for (number of numbers) {
   console.log(number);
 }
+
+//Adiciona um valor no final do arrei.
+numbers.push(0);
+console.log(numbers);

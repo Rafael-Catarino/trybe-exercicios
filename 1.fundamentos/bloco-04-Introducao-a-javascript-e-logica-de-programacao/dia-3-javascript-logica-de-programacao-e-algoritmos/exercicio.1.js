@@ -18,4 +18,3 @@ for (coluna = 0; coluna < n; coluna += 1) {
     asteristico += "*";
   }
 }
-
