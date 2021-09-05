@@ -5,7 +5,6 @@ O lucro de um produto é o resultado da subtração do valor de venda pelo custo
 valorCustoTotal = valorCusto + impostoSobreOCusto
 lucro = valorVenda - valorCustoTotal (lucro de um produto) */
 
-
 const valorCusto = 10;
 const valorVenda = 15;
 
