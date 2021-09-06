@@ -31,25 +31,3 @@ for (let cont = 0; cont < n; cont += 1) {
     console.log(asteristico);
   }
 }
-
-// Outra forma de fazer:
-
-// OBS: Eu consegui chegar nessa forma atravez do gabarito.
-let n = 5;
-let asteristico = "*";
-let espaço = n;
-let triangulo = "";
-
-for (let linha = 0; linha < n; linha += 1) {
-  for (let coluna = 0; coluna <= n; coluna += 1) {
-    if (coluna < espaço) {
-      triangulo += " ";
-    }
-    else {
-      triangulo += asteristico;
-    }
-  }
-  console.log(triangulo);
-  triangulo = "";
-  espaço -= 1;
-}
