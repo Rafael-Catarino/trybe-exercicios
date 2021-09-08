@@ -83,6 +83,14 @@
 
       upperTextP()
       //6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        function displayText() {
+          let displayText = document.getElementByTagName('p');
+          for(let index of displayText) {
+            console.log(index.innerText);
+          }
+        }
+
+        displayText();
     </script>
 </body>
 </html>
