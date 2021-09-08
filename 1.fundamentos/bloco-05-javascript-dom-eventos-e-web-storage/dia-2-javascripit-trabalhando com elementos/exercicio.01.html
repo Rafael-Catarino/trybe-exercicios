@@ -27,7 +27,7 @@ let elementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta");
 elementoOndeVoceEsta.parentElement.style.backgroundColor = "green";
 
 //3- Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
-let primeiroFilhoDoFilho = document.getElementById("primeiroFilho");
+let primeiroFilhoDoFilho = document.getElementById("primeiroFilhoDoFilho");
 primeiroFilhoDoFilho.innerText = "Rafael dos Santos Catarino"
 
 //4- Acesse o primeiroFilho a partir de pai.
@@ -47,12 +47,41 @@ elementoOndeVoceEsta.nextElementSibling.innerText = "Estou aqui"
 pai.lastElementChild.previousElementSibling.style.color = "blue";
 
 //9- Crie um irmão para elementoOndeVoceEsta .
+let sectionPai = document.querySelector('#pai');
+
+irmaos = 'Rafael e Fafa';
+
+let sectionIrmao = document.createElement('section');
+sectionIrmao.innerText = irmaos;
+
+sectionIrmao.className = 'irmao';
+
+sectionPai.appendChild(sectionIrmao);
 
 //10- Crie um filho para elementoOndeVoceEsta .
+let terceiroFilho = document.createElement('section');
 
-//11- Crie um filho para primeiroFilhoDoFilho .
+terceiroFilho.innerText = 'Mariana';
 
-//12- A partir desse filho criado, acesse terceiroFilho .
+terceiroFilho.className = 'terceiroFilho'
+
+elementoOndeVoceEsta.appendChild(terceiroFilho);
+
+//11- Crie um filho para primeiroFilhoDoFilho.
+let primeiroFilhoDoFilhoDoFilho = document.createElement('section');
+
+primeiroFilhoDoFilhoDoFilho.innerText = 'Carlos';
+
+primeiroFilhoDoFilhoDoFilho.className = 'primeiroFilhoDoFilhoDoFilho';
+
+primeiroFilhoDoFilho.appendChild(primeiroFilhoDoFilhoDoFilho);
+
+//12- A partir desse filho criado, acesse terceiroFilho.
+primeiroFilhoDoFilhoDoFilho.parentNode.parentNode.nextElementSibling
+
+//13- Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho.
+
+
   </script>
 </body>
 </html>
