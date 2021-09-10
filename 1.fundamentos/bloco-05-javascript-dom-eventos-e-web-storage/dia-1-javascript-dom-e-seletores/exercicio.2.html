@@ -9,23 +9,31 @@
 <body>
   <header>
     <h2 id="page-title">Título</h2>
-    <p class="paragraph">Dê uma cor para este parágrafo!</p>
+    <p class="para paragraph">Dê uma cor para este parágrafo!</p>
     <h4 id="subtitle">Subtítulo</h4>
-    <p class="paragraph">Segundo parágrafo!</p>
+    <p class="para second-paragraph">Segundo parágrafo!</p>
   </header>
   <script>
+
+    const titulo = document.querySelector('#page-title');
+    titulo.style.color = 'yellow';
+    titulo.style.backgroundColor = 'black';
+
     //1. Adicione uma classe igual para os dois parágrafos.
 
     //2. Recupere os seus parágrafos via código JavaScript , usando a função getElementsByClassName ;
-    const paragraph = document.getElementsByClassName("paragraph");
-    paragraph[1].innerText = "Trocar de cor"
+    const paragraph = document.getElementsByClassName("para");
+    for(let index = 0; index <= paragraph.length; index += 1) {
+      paragraph[index].style.color = 'orange';
+    }
 
     //3. Altere algum estilo do primeiro deles.
-    paragraph[0].style.color = "blue";
     
     //4. Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName
-    const subtitle = document.getElementsByTagName("h4");
-    subtitle[0].style.color = "red";
+    const subtitle = document.getElementsByTagName("h4")[0];
+    subtitle.style.color = "red";
+
+
   </script>
 </body>
 </html>

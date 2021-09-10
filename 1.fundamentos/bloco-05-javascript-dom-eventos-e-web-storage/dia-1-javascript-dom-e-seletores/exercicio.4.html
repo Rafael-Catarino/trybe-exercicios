@@ -50,45 +50,49 @@
       */
       //1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
       function changetext() {
-        let chengeText = document.getElementsByTagName("p")[1].innerText = "Espero estar trabalhando em uma grande empresa na área de programação."
+        let chengeText = document.getElementsByTagName("p")[0];
+        chengeText.innerText = "Espero estar trabalhando em uma grande empresa na área de programação.";
       }
 
       changetext()
       
       //2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
       function changeMainColor() {
-        let changeMainColor = document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(76,164,109)";
+        let changeMainColor = document.getElementsByClassName("main-content")[0];
+        changeMainColor.style.backgroundColor = "rgb(76,164,109)";
       }
 
       changeMainColor()
 
       //3. Crie uma função que mude a cor do quadrado vermelho para branco.
       function changeSectionColor() {
-        let changeMainColor = document.getElementsByClassName("center-content")[0].style.backgroundColor = "rgb(999,999,999)";
+        let changeMainColor = document.getElementsByClassName("center-content")[0];
+        changeMainColor.style.backgroundColor = "rgb(999,999,999)";
       }
 
       changeSectionColor()
 
       //4. Crie uma função que corrija o texto da tag <h1>.
       function correctTextH1() {
-        let correctTextH1 = document.getElementsByTagName("h1")[0].innerText = "Exercício 5.1 - JavaScript";
+        let correctTextH1 = document.getElementsByTagName("h1")[0];
+        correctTextH1.innerText = "Exercício 5.1 - JavaScript";
       }
 
       correctTextH1();
       //5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
       function upperTextP() {
         let upperTextP = document.getElementsByTagName("p")[0];
-        upperTextP.innerHTML = upperTextP.innerHTML.toUpperCase();
+        upperTextP.innerText = upperTextP.innerText.toUpperCase();
       }
 
       upperTextP()
       //6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-        function displayText() {
-          let displayText = document.getElementByTagName('p');
-          for(let index of displayText) {
-            console.log(index.innerText);
-          }
+      function displayText() {
+        let paragraphs = document.getElementsByTagName('p');
+        for(let index = 0; index < paragraphs.length; index += 1) {
+          console.log(paragraphs[index].innerText);
         }
+      }
 
         displayText();
     </script>
