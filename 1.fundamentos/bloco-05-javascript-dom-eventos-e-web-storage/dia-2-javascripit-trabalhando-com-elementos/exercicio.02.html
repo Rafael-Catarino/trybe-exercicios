@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício.02</title>
+</head>
+<body>
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+//9- Crie um irmão para elementoOndeVoceEsta .
+const pai = document.getElementById('pai');
+const irmão = document.createElement('section');
+irmão.id = 'irmão';
+pai.appendChild(irmão);
+
+//10- Crie um filho para elementoOndeVoceEsta .
+const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+const filhoElementoOndeVoceEsta = document.createElement('section');
+filhoElementoOndeVoceEsta.id = 'filhoElementoOndeVoceEsta';
+filhoElementoOndeVoceEsta.innerText = 'Esse filho foi criado dinamicamente com o JavaScript';
+elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
+
+//11- Crie um filho para primeiroFilhoDoFilho.
+const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+const filhoDoPrimeiroFilhoDoFilho = document.createElement('section');
+filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
+primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
+
+//12- A partir desse filho criado, acesse terceiroFilho.
+filhoDoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling;
+
+//13- Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho.
+
+
+  </script>
+</body>
+</html>

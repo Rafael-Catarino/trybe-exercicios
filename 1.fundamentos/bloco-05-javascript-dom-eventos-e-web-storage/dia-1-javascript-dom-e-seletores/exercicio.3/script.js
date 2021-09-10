@@ -1,14 +1,14 @@
 const header = document.getElementById("header-container");
 header.style.backgroundColor = "rgb(76,164,109)";
 
-const emergencyTasks = document.getElementsByClassName("emergency-tasks");
-emergencyTasks[0].style.backgroundColor = "pink";
+const emergencyTasks = document.getElementsByClassName("emergency-tasks")[0];
+emergencyTasks.style.backgroundColor = "pink";
 
-const noEmergencyTasks = document.getElementsByClassName("no-emergency-tasks"); 
-noEmergencyTasks[0].style.backgroundColor = "#F8CC3C";
+const noEmergencyTasks = document.querySelector(".no-emergency-tasks"); 
+noEmergencyTasks.style.backgroundColor = "#F8CC3C";
 
 const firstClassH3 = document.querySelectorAll(".emergency-tasks h3");
-for (let cont = 0; cont < firstClassH3.length; cont+= 1) {
+for (let cont = 0; cont < firstClassH3.length; cont += 1) {
   firstClassH3[cont].style.backgroundColor = "#9032F8";
 }
 
