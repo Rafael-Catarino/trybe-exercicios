@@ -75,10 +75,8 @@ function imputClickHoliday() {
 
   button.addEventListener('click',function() {
     for (let cont = 0; cont < days.length; cont += 1) {
-      console.log(cont);
       if (days[cont].style.backgroundColor === returnColor) {
         days[cont].style.backgroundColor = backgroundColor;
-        console.log(days[cont]);
       } else {
         days[cont].style.backgroundColor = returnColor;
       }
@@ -108,9 +106,21 @@ Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click
 É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.*/
 
 function imputClickFriday() {
-  const clickButtonFriday = document.querySelector('#btn-friday');
-  const days = document.querySelector('.holiday');
-  const text = 'Sextou';
+  let clickButtonFriday = document.querySelector('#btn-friday');
+  let days = document.querySelectorAll('.friday');
+  let text = 'Sextou';
+  let x = [4, 11, 18, 25];
 
-  clickButtonFriday.addEventListener('click')
+  clickButtonFriday.addEventListener('click', function(){
+    for (let index = 0; index < days.length; index += 1) {
+      if (days[index].innerHTML !== text) {
+        days[index].innerHTML = text;
+      } else {
+        days[index].innerHTML = x[index];
+      }
+    }
+  });
 }
+
+imputClickFriday()
+
