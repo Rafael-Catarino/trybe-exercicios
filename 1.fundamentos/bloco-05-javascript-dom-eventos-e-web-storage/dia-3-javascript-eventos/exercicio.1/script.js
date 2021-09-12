@@ -159,3 +159,18 @@ function creationMyTasks(tarefa) {
 }
 
 creationMyTasks('cosinhar');
+
+/*Exercício 8:
+Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
+O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
+O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".*/
+
+function creationColor (color) {
+  const myTasks = document.querySelector('.my-tasks');
+  const task = document.createElement('div');
+  task.className = 'task';
+  task.style.backgroundColor = color;
+  myTasks.appendChild(task);
+}
+
+creationColor('blue');
