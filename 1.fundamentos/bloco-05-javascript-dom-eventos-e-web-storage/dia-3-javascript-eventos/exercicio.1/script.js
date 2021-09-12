@@ -75,10 +75,8 @@ function imputClickHoliday() {
 
   button.addEventListener('click',function() {
     for (let cont = 0; cont < days.length; cont += 1) {
-      console.log(cont);
       if (days[cont].style.backgroundColor === returnColor) {
         days[cont].style.backgroundColor = backgroundColor;
-        console.log(days[cont]);
       } else {
         days[cont].style.backgroundColor = returnColor;
       }
@@ -108,9 +106,44 @@ Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click
 É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.*/
 
 function imputClickFriday() {
-  const clickButtonFriday = document.querySelector('#btn-friday');
-  const days = document.querySelector('.holiday');
-  const text = 'Sextou';
+  let clickButtonFriday = document.querySelector('#btn-friday');
+  let days = document.querySelectorAll('.friday');
+  let text = 'Sextou';
+  let x = [4, 11, 18, 25];
 
-  clickButtonFriday.addEventListener('click')
+  clickButtonFriday.addEventListener('click', function(){
+    for (let index = 0; index < days.length; index += 1) {
+      if (days[index].innerText !== text) {
+        days[index].innerText = text;
+      } else {
+        days[index].innerText = x[index];
+      }
+    }
+  });
 }
+
+imputClickFriday()
+
+/*Exercício 6:
+Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.*/
+function mouseOver() {
+  let days = document.querySelector('#days');
+
+  days.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeigth = '600';
+  });
+}
+
+function mouseOut() {
+  let days = document.getElementById('days');
+
+  days.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeigth = '200';
+  });
+}
+
+mouseOver();
+mouseOut();
+
