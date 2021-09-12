@@ -113,14 +113,37 @@ function imputClickFriday() {
 
   clickButtonFriday.addEventListener('click', function(){
     for (let index = 0; index < days.length; index += 1) {
-      if (days[index].innerHTML !== text) {
-        days[index].innerHTML = text;
+      if (days[index].innerText !== text) {
+        days[index].innerText = text;
       } else {
-        days[index].innerHTML = x[index];
+        days[index].innerText = x[index];
       }
     }
   });
 }
 
 imputClickFriday()
+
+/*Exercício 6:
+Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.*/
+function mouseOver() {
+  let days = document.querySelector('#days');
+
+  days.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeigth = '600';
+  });
+}
+
+function mouseOut() {
+  let days = document.getElementById('days');
+
+  days.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeigth = '200';
+  });
+}
+
+mouseOver();
+mouseOut();
 
