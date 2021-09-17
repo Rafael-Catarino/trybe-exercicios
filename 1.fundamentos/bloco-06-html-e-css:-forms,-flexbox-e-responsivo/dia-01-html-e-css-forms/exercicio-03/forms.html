@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+
+<body>
+  <header>
+    <h1>Formulário para cadastro de currículo.</h1>
+    <p>Preencha os campos a baixo:</p>
+  </header>
+
+  <form action="" method="get">
+    <fieldset>
+      <label for="input-nome">Nome:
+        <input type="text" name="nome" checked placeholder="Digite o seu nome" id="input-nome">
+      </label>
+      <br>
+      <label for="input-email">E-mail:
+        <input type="email" name="email" checked placeholder="Digite o seu E-mail" id="input-email">
+      </label>
+      <br>
+      <label for="input-cpf">CPF:
+        <input type="texto" name="cpf" checked placeholder="Digite o seu CPF" id="input-cpf">
+      </label>
+      <br>
+      <label for="input-endereco">Endereço:
+        <input type="text" name="endereco" checked placeholder="Digite o seu indereço" id="input-endereco">
+      </label>
+      <br>
+      <label for="">Cidade:
+        <input type="text" name="cidade" checked placeholder="Digite sua Cidade" id="input-cidade">
+      </label>
+      <br>
+      <label for="input-moradia1">Tipo de moradia:
+        <input type="radio" name="moradia" id="input-moradia1" value="casa" checked>casa
+      </label>
+      <label for="input-moradia2">
+        <input type="radio" name="moradia" id="input-moradia2" value="casa" checked>Apartamento
+      </label>
+    </fieldset>
+    <fieldset>
+      <p>Resumo do currículo:</p>
+      <textarea name="resumo-curriculo" id="resumo-curriculo" cols="30" rows="10" placeholder="Digite seu resumo" aria-checked="true"></textarea>
+      <br>
+      <label for="input-cargo">Cargo:
+        <input type="text" name="cargo" id="input-cargo" checked>
+      </label>
+      <br>
+      <p>Descrição de Cargo:</p>
+      <textarea name="descrição-cargo" id="descrição-cargo" cols="30" rows="10" placeholder="Descreva seu cargo" aria-checked="true"></textarea>
+
+        
+      </label>
+    </fieldset>
+  </form>
+</body>
+
+</html>
