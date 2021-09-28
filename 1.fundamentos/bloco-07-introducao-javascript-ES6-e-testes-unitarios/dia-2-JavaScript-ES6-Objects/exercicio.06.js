@@ -71,3 +71,25 @@ console.log(allLessons);*/
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 console.log(allLessons);
 
+/*6- Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.*/
+
+function sumStudent(obj) {
+  let totalStudent = 0
+  const arrayOfKeys = Object.keys(obj);
+  for(let index in arrayOfKeys) {
+    totalStudent += obj[arrayOfKeys[index]].numeroEstudantes; 
+  }
+  console.log(totalStudent);
+}
+
+sumStudent(allLessons);
+
+/*7- Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
+console.log(getValueByNumber(lesson1, 0));
+// Output: 'Matématica'
+*/
+
+const getValueByNumber = (obj, num) => Object.values(obj)[num];
+
+
+console.log(getValueByNumber(lesson1, 3));
