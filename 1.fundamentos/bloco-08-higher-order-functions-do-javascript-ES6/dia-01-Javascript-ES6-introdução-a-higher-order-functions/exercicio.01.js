@@ -13,14 +13,9 @@ const drinkCoffee = () => 'Bora tomar café!!'
 
 const night = () => 'Partiu dormir!!'
 
-const doingThings = (func) => {
-  if(func === wakeUp) {
-    return 'Acordando!!'
-  } else if (func === drinkCoffee) {
-    return 'Bora tomar café!!'
-  } else {
-    return 'Partiu dormir!!'
-  }
+const doingThings = (callback) => {
+  const result = callback();
+  console.log(result);  
 }
 
 
@@ -28,12 +23,6 @@ const doingThings = (func) => {
 console.log(doingThings(wakeUp));
 console.log(doingThings(drinkCoffee));
 console.log(doingThings(night));
-
-console.log(wakeUp());
-console.log(drinkCoffee());
-console.log(night());
-
-
 
 // Ela deve retornar o valor do respectivo parâmetro, neste caso:
 // Acordando!!
