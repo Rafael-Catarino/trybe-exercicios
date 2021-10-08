@@ -1,5 +1,4 @@
-/* const assert = require('assert'); */
-
+/* Para os exercícios 2, 3 e 4 considere o seguinte array: */
 const books = [
   {
     id: 1,
@@ -62,13 +61,43 @@ const books = [
     releaseYear: 1928,
   },
 ];
-/* 7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário. */
+
 // Adicione o código do exercício aqui:
-function authorUnique() {
+/* 4 - Encontre o livro com o maior nome. */
+/* const expectedResult = {
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  genre: 'Fantasia',
+  author: {
+    name: 'George R. R. Martin',
+    birthYear: 1948,
+  },
+  releaseYear: 1991,
+}; */
+
+function longestNamedBook() {
   // escreva seu código aqui
-  return books.some((book) => {});
+  // Utilizando o for.
+  
+  /*
+  let lenthBook = '';
+  let book = '';
+  for(index = 0; index < books.length; index += 1) {
+    if (lenthBook.length < books[index].name.length) {
+      lenthBook = books[index].name.length;
+      book = books[index];
+    }
+  }
+  return book;
+  
+  }*/
+  
+  return books.reduce((acumulador, book) => {
+    if (book.name.length > acumulador.name.length) {
+      return book
+    } 
+    return acumulador
+  });
 }
 
-console.log(authorUnique()); 
-
-/* assert.strictEqual(authorUnique(), expectedResult); */
+console.log(longestNamedBook());

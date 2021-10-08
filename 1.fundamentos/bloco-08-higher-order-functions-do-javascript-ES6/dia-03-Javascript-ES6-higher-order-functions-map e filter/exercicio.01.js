@@ -1,5 +1,3 @@
-/* const assert = require('assert'); */
-
 const books = [
   {
     id: 1,
@@ -62,13 +60,13 @@ const books = [
     releaseYear: 1928,
   },
 ];
-/* 7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário. */
+
 // Adicione o código do exercício aqui:
-function authorUnique() {
+/* 1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
+Dica: Use a função map */
+function formatedBookNames() {
   // escreva seu código aqui
-  return books.some((book) => {});
+  return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`)
 }
 
-console.log(authorUnique()); 
-
-/* assert.strictEqual(authorUnique(), expectedResult); */
+console.log(formatedBookNames());

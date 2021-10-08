@@ -1,5 +1,3 @@
-/* const assert = require('assert'); */
-
 const books = [
   {
     id: 1,
@@ -62,13 +60,18 @@ const books = [
     releaseYear: 1928,
   },
 ];
-/* 7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário. */
+
 // Adicione o código do exercício aqui:
-function authorUnique() {
+/* 3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados. */
+/* const expectedResult = 43; */
+
+function averageAge() {
   // escreva seu código aqui
-  return books.some((book) => {});
+  const booksLength = books.length
+  const sum = books.reduce((acumulador, book) => (
+    acumulador + (book.releaseYear - book.author.birthYear)
+  ), 0); //nesse caso é preciso passar o parametro 0
+  return sum/booksLength;
 }
 
-console.log(authorUnique()); 
-
-/* assert.strictEqual(authorUnique(), expectedResult); */
+console.log(averageAge());
