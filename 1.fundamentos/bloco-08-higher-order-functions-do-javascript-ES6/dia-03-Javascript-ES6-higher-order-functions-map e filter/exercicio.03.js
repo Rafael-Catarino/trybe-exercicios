@@ -1,5 +1,3 @@
-/* const assert = require('assert'); */
-
 const books = [
   {
     id: 1,
@@ -62,13 +60,13 @@ const books = [
     releaseYear: 1928,
   },
 ];
-/* 7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário. */
+
 // Adicione o código do exercício aqui:
-function authorUnique() {
+/* 3 - Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
+Dica: use a função filter ; */
+function fantasyOrScienceFiction() {
   // escreva seu código aqui
-  return books.some((book) => {});
+  return books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
 }
 
-console.log(authorUnique()); 
-
-/* assert.strictEqual(authorUnique(), expectedResult); */
+console.log(fantasyOrScienceFiction());

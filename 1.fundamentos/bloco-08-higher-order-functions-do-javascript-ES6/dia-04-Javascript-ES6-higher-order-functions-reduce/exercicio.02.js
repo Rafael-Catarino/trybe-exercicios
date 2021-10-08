@@ -1,5 +1,3 @@
-/* const assert = require('assert'); */
-
 const books = [
   {
     id: 1,
@@ -62,13 +60,14 @@ const books = [
     releaseYear: 1928,
   },
 ];
-/* 7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário. */
+
 // Adicione o código do exercício aqui:
-function authorUnique() {
+/* 2 - Crie uma string com os nomes de todas as pessoas autoras. */
+/* const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
+ */
+function reduceNames() {
   // escreva seu código aqui
-  return books.some((book) => {});
+  return books.reduce((acumulador, book) => `${acumulador} ${book.author.name},`, '')
 }
 
-console.log(authorUnique()); 
-
-/* assert.strictEqual(authorUnique(), expectedResult); */
+console.log(reduceNames());
