@@ -62,23 +62,14 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-/* 3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados. */
-/* const expectedResult = 43; */
+/* 7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+Dica: cada inicial termina com um ponto.
+Copiar */
 
-function averageAge() {
+function authorWith3DotsOnName() {
   // escreva seu código aqui
-  const booksLength = books.length
-  const sum = books.reduce((acumulador, book) => (
-    acumulador + (book.releaseYear - book.author.birthYear)
-  ), 0); //nesse caso é preciso passar o parametro 0
-  return sum/booksLength;
+  const bookName = books.find((book) => book.author.name === 'J. R. R. Tolkien');
+  return bookName.name
 }
 
-console.log(averageAge());
-
-/* function averageAge() {
-  escreva seu código aqui
-  return books.reduce((result, book) => result + (book.releaseYear - book.author.birthYear)/ books.length ,0);
-}
-
-console.log(averageAge()) */
+console.log(authorWith3DotsOnName());
