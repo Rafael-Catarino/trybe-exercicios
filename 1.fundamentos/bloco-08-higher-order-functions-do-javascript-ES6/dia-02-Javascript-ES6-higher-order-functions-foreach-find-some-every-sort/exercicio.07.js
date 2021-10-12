@@ -66,7 +66,10 @@ const books = [
 // Adicione o código do exercício aqui:
 function authorUnique() {
   // escreva seu código aqui
-  return books.some((book) => {});
+  return books.every((bookA) => {
+    !books.some((bookB) => (bookA.author.birthYear === bookB.author.birthYear && bookA.author.name !== bookB.author.name) 
+    );
+  });
 }
 
 console.log(authorUnique()); 

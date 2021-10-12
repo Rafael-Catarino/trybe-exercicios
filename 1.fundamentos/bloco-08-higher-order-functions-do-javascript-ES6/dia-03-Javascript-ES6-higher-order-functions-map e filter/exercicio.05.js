@@ -62,23 +62,12 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-/* 3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados. */
-/* const expectedResult = 43; */
+/* 5 - Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia. */
 
-function averageAge() {
+function fantasyOrScienceFictionAuthors() {
   // escreva seu código aqui
-  const booksLength = books.length
-  const sum = books.reduce((acumulador, book) => (
-    acumulador + (book.releaseYear - book.author.birthYear)
-  ), 0); //nesse caso é preciso passar o parametro 0
-  return sum/booksLength;
+  const nameBook = books.filter((book) => book.genre === 'Ficção Científica' || book.genre ==='Fantasia');
+  return nameBook.map((book) => book.author.name).sort();
 }
 
-console.log(averageAge());
-
-/* function averageAge() {
-  escreva seu código aqui
-  return books.reduce((result, book) => result + (book.releaseYear - book.author.birthYear)/ books.length ,0);
-}
-
-console.log(averageAge()) */
+console.log(fantasyOrScienceFictionAuthors());
