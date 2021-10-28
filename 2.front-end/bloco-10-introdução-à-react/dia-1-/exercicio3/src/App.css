@@ -1,0 +1,21 @@
+.header {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer {
+  color: green;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  color: green;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
