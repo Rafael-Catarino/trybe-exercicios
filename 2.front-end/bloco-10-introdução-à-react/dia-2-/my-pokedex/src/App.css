@@ -1,0 +1,28 @@
+.pokemon {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  height: 150px;
+  width: 280px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 130px;
+}
+
+.imagem {
+  display: flex;
+  justify-content: center;
+  width: 130px;
+}
+
+.card-pokemon {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
